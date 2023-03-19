@@ -34,6 +34,8 @@ export const fetchAddContact = createAsyncThunk(
         return normalized === name.toLowerCase();
       });
       if (result) {
+        alert(`${name} is already in contacts`);
+
         return false;
       }
     },
